@@ -1,0 +1,14 @@
+{
+  "name": "message-board",
+  "description": "Small description for message-board goes here",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
