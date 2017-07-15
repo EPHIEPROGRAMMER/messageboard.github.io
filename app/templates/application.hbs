@@ -1,5 +1,15 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="wrap">
+  <div class="nav-wrap">
+    <div class="nav-logo">
 
-{{outlet}}
+      <div class="nav-qna-logo">
+        {{#link-to 'index'}}<h1 class="qna">Ephie Q&A</h1>{{/link-to}}
+      </div>
+    </div>
+
+  </div>
+  <div class="body-wrap">
+    {{outlet}}
+  </div>
+
+</div>

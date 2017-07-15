@@ -1,0 +1,18 @@
+<div class="riddler">
+  <div class="riddler-q">
+    <h4 class="question">Question:</h4>
+    <h2 class="questions">{{model.content}}</h2>
+    <h5 class="question-asked">ASKED BY:</h5>
+    <h3 class="question-asker">{{model.author}}</h3>
+  </div>
+  <div class="q-detail">
+    <h5>[ <span class="asking-because">ASKING BECAUSE</span> ]</h5>
+    <h4>{{model.detail}}</h4>
+  </div>
+  {{new-answer save1="save2" question=model}}
+</div>
+
+
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
