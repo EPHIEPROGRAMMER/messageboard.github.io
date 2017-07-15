@@ -1,0 +1,17 @@
+<div class="body-riddler-add">
+  {{new-question save2="save3"}}
+</div>
+<div class="body-riddler">
+  {{#each model as |question|}}
+    <div class="riddler">
+      {{question-tile question=question}}
+      {{edit-question question=question update="update"}}
+    </div>
+  {{/each}}
+</div>
+<div class="body-riddler-add">
+  {{new-question save2="save3"}}
+</div>
+<div class="favoriteQsArea">
+  {{display-favorites}}
+</div>
