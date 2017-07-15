@@ -1,0 +1,8 @@
+{{#if editFormShow}}
+  {{input value=content id="content" placeholder=question.content}}
+  {{input value=author id="author" placeholder=question.author}}
+  {{input value=detail id="detail" placeholder=question.detail}}
+  <button {{action 'update' question}} class="save-edits">Save</button>
+{{else}}
+  <button class="edit-button" {{action 'showEdit'}}>Edit Question</button>
+{{/if}}
