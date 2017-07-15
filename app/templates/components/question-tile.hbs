@@ -1,0 +1,11 @@
+{{#link-to 'question' question}}
+<div class="riddler-q">
+  <h4 class="question">Question:</h4>
+  <h2 class="questions">{{question.content}}</h2>
+  <h4 class="question">A: <span class="bracket">[</span> {{answerCount}} <span class="bracket">]</span></h4>
+  <div class="money">
+    {{answer-popularity question}}
+  </div>
+</div>
+{{/link-to}}
+<button {{action 'addToFavs' question}} class="btn-add"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Favorite</button>
