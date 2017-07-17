@@ -1,19 +1,15 @@
-/* eslint-env node */
+/* jshint node: true */
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'message-board',
+    modulePrefix: 'questions-answers',
     environment: environment,
-    rootURL: '/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
     },
 
@@ -40,6 +36,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+    ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter

@@ -1,0 +1,6 @@
+<h2>Your Favorite Questions</h2>
+{{#each favoriteQuestions.questions as |question|}}
+  <div class="favQs">
+    {{#link-to 'question' question}}<h4>{{question.content}} &ndash; <span class="fav-author">{{question.author}}</span></h4>{{/link-to}}
+  </div>
+{{/each}}

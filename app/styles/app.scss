@@ -1,0 +1,326 @@
+// html {
+//   height: 100vh;
+//   box-sizing: border-box;
+// }
+// *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+//
+// a {
+//   color: #000000;
+//   text-decoration: none;
+//   &:hover {
+//     color: #000000;
+//     text-decoration: none;
+//   }
+// }
+//
+// img.logo {
+//   width: 75px;
+//   height: 75px;
+// 	margin-right: 13px;
+// }
+//
+// body {
+// 	width: 100%;
+//   min-height: 100%;
+// 	position: relative;
+// 	padding: 0 0 0 0;
+// 	margin: 0 0 0 0;
+// 	background-color: lightgray;
+// }
+//
+// h1, h2, h3, h4, h5, h6, p, a {
+// 	font-family: Helvetica, Arial, sans-serif;
+// }
+//
+// .nav-wrap {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	height: 100px;
+// 	width: 100%;
+// 	padding: 0 20px 0 20px;
+// 	background-color: #efefef;
+// 	box-shadow: 0 3px 5px #888888;
+// }
+//
+// .nav-logo {
+// 	display: flex;
+// 	height: 100%;
+// 	align-items: center;
+// }
+//
+// h1.qna {
+// 	color: #96aa9f;
+// 	text-shadow: 0.33px 0.33px 2px #333333;
+// }
+//
+// .nav-ember {
+// 	display: flex;
+// 	align-items: center;
+// 	.ember-info {
+// 		p {
+// 			letter-spacing: 0.1em;
+// 		}
+// 	}
+// 	.ember-logo {
+// 		margin: 0 5px 0 3px;
+// 		img.logo-ember {
+// 			height: 33px;
+// 			width: auto;
+// 		}
+// 	}
+// }
+//
+// .body-wrap {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	padding: 20px 0 0 0;
+// }
+//
+// .body-riddler {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	padding: 0 20px 0 20px;
+// 	justify-content: center;
+// }
+//
+// .riddler {
+// 	width: 350px;
+// 	height: auto;
+// 	margin: 0 10px 20px 10px;
+// 	.riddler-q {
+// 		width: 350px;
+// 		height: 350px;
+// 		background-image: url("../img/question-marks.jpg");
+//     &:hover {
+//       background-image: url("../img/question-marks2.jpg");
+//     }
+// 	}
+// }
+//
+// h4.question {
+// 	color: #ffffff;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	font-weight: bold;
+// 	font-size: 0.8em;
+// 	padding: 20px 20px 0 20px;
+// 	margin: 0 0 20px 0;
+// 	text-shadow: 0.33px 0.33px 2px #333333;
+// }
+//
+// h2.questions {
+// 	color: #ffffff;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	font-weight: lighter;
+// 	font-style: italic;
+// 	font-size: 2.3em;
+// 	padding: 0 20px;
+// 	margin: 0;
+// 	text-shadow: 0.33px 0.33px 2px #333333;
+// }
+//
+// h5.question-asked {
+// 	color: #ffffff;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	font-weight: lighter;
+// 	font-size: 0.8em;
+// 	padding: 0 20px;
+// 	margin: 20px 0 0 0;
+// 	text-shadow: 0.33px 0.33px 2px #333333;
+// }
+//
+// h3.question-asker {
+// 	color: #ffffff;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	font-weight: lighter;
+// 	font-style: italic;
+// 	font-size: 1.8em;
+// 	padding: 0 20px;
+// 	margin: 0;
+// 	text-shadow: 0.33px 0.33px 2px #333333;
+// }
+//
+// button.edit-button {
+// 	width: 100%;
+// 	height: 43px;
+// 	color: #40879b;
+// 	font-weight: bolder;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	background-color: #182023;
+// 	border: 1px solid #182023;
+// }
+//
+// button.new-question, button.new-answer {
+// 	width: 350px;
+// 	height: 43px;
+// 	color: #182023;
+// 	font-weight: bolder;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	margin: 0 0 20px 0;
+// 	background-color: #40879b;
+// 	border: 1px solid #40879b;
+// }
+//
+// button.btn-add {
+//   width: 350px;
+// 	height: 43px;
+// 	color: #ffffff;
+// 	font-weight: normal;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	margin: 0;
+// 	background-color: #96aa9f;
+// 	border: 1px solid #96aa9f;
+// }
+//
+// .q-detail {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	width: 100%;
+// 	background-color: #182023;
+// 	border: 1px solid #182023;
+// 	h5 {
+// 		color: #40879b;
+// 		font-weight: lighter;
+// 		text-transform: uppercase;
+// 		letter-spacing: 3px;
+// 		font-size: 18px;
+// 		margin: 0;
+// 		padding: 20px 0 0 0;
+// 		span.asking-because {
+// 			color: #40879b;
+// 			font-weight: bolder;
+// 			text-transform: uppercase;
+// 			letter-spacing: 3px;
+// 			font-size: 13px;
+// 		}
+// 	}
+// 	h4 {
+// 		color: #ffffff;
+// 		font-weight: lighter;
+// 		text-transform: capitalize;
+// 		letter-spacing: 3px;
+// 		font-size: 15px;
+// 		margin: 0;
+// 		padding: 20px 20px;
+// 	}
+// }
+//
+// .answers {
+// 	width: 350px;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-around;
+// }
+//
+// .answered, .answer-author {
+// 	display: flex;
+// 	align-items: baseline;
+// }
+//
+// h3.answer-a {
+// 	font-size: 10px;
+// 	text-transform: uppercase;
+// 	font-weight: lighter;
+// 	letter-spacing: 3px;
+// 	margin: 0;
+// 	padding: 0;
+// }
+//
+// h2.answer-b {
+// 	color: #40879b;
+// 	font-size: 25px;
+// 	font-weight: bolder;
+// 	margin: 0;
+// 	padding: 0;
+// }
+//
+// h2.answer-c {
+// 	color: #40879b;
+// 	font-size: 25px;
+// 	font-weight: bolder;
+// 	margin: 0 0 20px 0;
+// 	padding: 0;
+// }
+//
+// h4 {
+//   span.fav-author {
+//     font-weight: lighter;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     font-size: 0.75em;
+//   }
+// }
+//
+// i.that-question-is-gonna-be-a-star {
+//   font-size: 33px;
+//   color: #ffffff;
+//   margin-left: 165px;
+//   margin-top: 0.3em;
+//   -webkit-text-shadow: 0px 0px 18px lightgreen;
+//   -moz-text-shadow: 0px 0px 18px lightgreen;
+//   text-shadow: 0px 0px 18px lightgreen;
+// }
+//
+// .bracket {
+//   font-size: 1.3em;
+//   font-weight: lighter;
+//   color: #40879b;
+//   text-shadow: 0.33px 0.33px 2px #182023;
+// }
+//
+// .favoriteQsArea {
+//   margin-bottom: 70px
+// }
+//
+// .footer {
+//   width: 100%;
+//   height: 50px;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   background-color: #efefef;
+//   text-align: center;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0 20px;
+// }
+//
+// .flags {
+//   display: flex;
+//   .footer-flag {
+//     img {
+//       height: 15px;
+//       width: 23px;
+//       margin-right: 0.5em;
+//       box-shadow: 0.5px 0.5px 1px #333333;
+//     }
+//   }
+// }
+//
+// .save-edits, .save-answer {
+// 	width: 100%;
+// 	height: 43px;
+// 	color: #ffffff;
+// 	font-weight: lighter;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	margin: 0 0 20px 0;
+// 	background-color: darkgreen;
+// 	border: 1px solid darkgreen;
+// }
+//
+// input {
+//   width: 100%;
+// 	height: 43px;
+// }
